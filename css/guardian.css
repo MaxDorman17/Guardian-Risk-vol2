@@ -114,6 +114,8 @@ h3.display { font-size: clamp(1.4rem, 2.2vw, 1.9rem); }
 
 /* Logo */
 .brand { display: flex; align-items: center; gap: 14px; }
+.brand-logo { height: 52px; width: auto; display: block; }
+.footer-brand .brand-logo { height: 58px; }
 .brand .logo-mark { width: 46px; height: 46px; flex-shrink: 0; }
 .brand .logo-text { display: flex; flex-direction: column; line-height: 1; }
 .brand .logo-text .name { font-weight: 600; font-size: 1.24rem; letter-spacing: 0.14em; color: var(--ink); }
@@ -284,6 +286,8 @@ body.menu-open .nav-toggle span:nth-child(2) { transform: translateY(0) rotate(-
 @media (max-width: 940px) {
   .nav, .header-cta .btn { display: none; }
   .nav-toggle { display: block; }
+  .brand-logo { height: 40px; }
+  .footer-brand .brand-logo { height: 48px; }
   .hero { flex-direction: column; min-height: 0; background: var(--paper); align-items: stretch; }
   .hero-bg { position: static; order: 2; width: 100%; height: clamp(240px, 56vw, 420px); object-position: 60% center; }
   .hero-scrim { display: none; }
