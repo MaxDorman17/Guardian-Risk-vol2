@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Node (if a form/build tool is added later)
+node_modules/
+npm-debug.log*
+
+# Large media (supply hero footage out-of-band if preferred)
+# assets/video/*.mp4
