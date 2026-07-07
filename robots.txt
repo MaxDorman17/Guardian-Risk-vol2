@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://guardian-risk-v2.maxnova.co.uk/sitemap.xml
