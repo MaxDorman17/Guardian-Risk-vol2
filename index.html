@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Guardian Risk Ltd | Business Risk &amp; Investigations</title>
-  <meta name="description" content="Guardian Risk provides discreet corporate investigations, business risk reviews, digital forensics and incident response for boards, legal counsel and regulated organisations." />
+  <meta name="description" content="Guardian Risk helps boards, investors and leadership teams expose hidden operational, cyber, regulatory and third-party risk before it becomes business exposure." />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/guardian.css" />
 </head>
 <body>
 
@@ -17,18 +17,42 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="/index.html" aria-label="Guardian Risk — home">
-        <svg class="mark" viewBox="0 0 22 26" aria-hidden="true"><path d="M11 1 L21 4.5 V13 C21 19 16.5 23.4 11 25.5 C5.5 23.4 1 19 1 13 V4.5 Z"/></svg>
-        <span><b>GUARDIAN</b> RISK</span>
+        <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M24 3 L42 10 V25 C42 35 34 42.5 24 46 C14 42.5 6 35 6 25 V10 Z" fill="none" stroke="#C6A15B" stroke-width="1.4"/>
+          <path d="M15 33 V17 L24 27 L33 17 V33" fill="none" stroke="#C6A15B" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+          <circle cx="24" cy="15.5" r="1.6" fill="#C6A15B"/>
+        </svg>
+        <span class="logo-text">
+          <span class="name">GUARDIAN&nbsp;RISK</span>
+          <span class="tag">Intelligence · Assurance · Protection</span>
+        </span>
       </a>
+
       <nav class="nav" aria-label="Primary">
-        <a href="/services.html">Services</a>
-        <a href="/about.html">About</a>
-        <a href="/about.html#process">How We Work</a>
+        <div class="has-drop">
+          <button type="button" aria-haspopup="true">Services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="dropdown" role="menu">
+            <a href="/services.html#corporate-investigations"><span class="t">Corporate Investigations</span><span class="d">Fraud, misconduct &amp; anomalies</span></a>
+            <a href="/services.html#risk-review"><span class="t">Business Risk &amp; Resilience</span><span class="d">Board-level assurance</span></a>
+            <a href="/services.html#device-forensics"><span class="t">Device Forensics</span><span class="d">Sound digital evidence</span></a>
+            <a href="/services.html#incident-response"><span class="t">Incident Response</span><span class="d">Contain &amp; investigate</span></a>
+            <a href="/services.html"><span class="t">All Services</span><span class="d">View the full capability</span></a>
+          </div>
+        </div>
+        <a href="#platform">G4R Platform</a>
+        <a href="#industries">Industries</a>
+        <a href="#insights">Insights</a>
+        <a href="/about.html">About Us</a>
         <a href="/contact.html">Contact</a>
       </nav>
+
       <div class="header-cta">
-        <a class="login" href="/contact.html">Client Login</a>
-        <a class="btn btn--brass" href="/contact.html">Request Consultation</a>
+        <a class="btn btn--dark" href="/contact.html">
+          <svg class="lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          Request a Confidential Briefing
+        </a>
       </div>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
     </div>
@@ -37,50 +61,122 @@
   <!-- ===== Mobile nav ===== -->
   <nav class="mobile-nav" aria-label="Mobile">
     <a href="/services.html">Services</a>
-    <a href="/about.html">About</a>
-    <a href="/about.html#process">How We Work</a>
+    <a href="#platform">G4R Platform</a>
+    <a href="#industries">Industries</a>
+    <a href="#insights">Insights</a>
+    <a href="/about.html">About Us</a>
     <a href="/contact.html">Contact</a>
-    <a class="btn btn--brass" href="/contact.html">Request Consultation</a>
-    <div class="m-contact">Urgent matters — <a href="mailto:ir@guardianrisk.co.uk">ir@guardianrisk.co.uk</a></div>
+    <a class="btn btn--brass" href="/contact.html">Request a Confidential Briefing</a>
+    <div class="m-contact">Urgent — <a href="mailto:ir@guardianrisk.co.uk">ir@guardianrisk.co.uk</a></div>
   </nav>
 
   <!-- ===== Hero ===== -->
   <section class="hero">
-    <div class="hero__media">
-      <!-- Drop cinematic footage at assets/video/hero.mp4 + poster at assets/img/hero-poster.jpg -->
-      <video autoplay muted loop playsinline poster="/assets/img/hero-poster.jpg">
-        <source src="/assets/video/hero.mp4" type="video/mp4" />
-      </video>
-    </div>
-    <div class="hero__grid" aria-hidden="true"></div>
-    <div class="wrap hero__inner">
-      <span class="eyebrow reveal">Business Risk &amp; Investigations</span>
-      <h1 class="display reveal" data-delay="90">Intelligent oversight.<br />Trusted compliance.</h1>
-      <p class="lead reveal" data-delay="180">Discreet corporate investigations and business risk assurance for boards, legal counsel and regulated organisations — conducted with proportionality, rigour and absolute confidentiality.</p>
-      <div class="hero__cta reveal" data-delay="270">
-        <a class="btn btn--brass" href="/contact.html">Request Confidential Consultation
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn--ghost" href="/services.html">View Our Services</a>
+    <div class="hero-grid">
+      <div class="hero-left">
+        <span class="eyebrow reveal">Business Risk &amp; Investigations</span>
+        <span class="rule reveal" data-delay="60"></span>
+        <h1 class="display reveal" data-delay="90">Uncover the risk beneath the <span class="brass">surface.</span></h1>
+        <p class="lead reveal" data-delay="180">Guardian Risk helps boards, investors and leadership teams expose hidden operational, cyber, regulatory and third-party risk before it becomes business exposure.</p>
+        <div class="hero-cta reveal" data-delay="270">
+          <a class="btn btn--brass" href="/contact.html">Request a Confidential Briefing
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></a>
+          <a class="btn btn--outline" href="#platform">Explore G4R Intelligence
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
       </div>
-    </div>
-    <div class="wrap hero__meta">
-      <span><span class="dot"></span> Engagements under NDA</span>
-      <span>Chain-of-custody evidence handling</span>
-      <span>Reports suitable for legal proceedings</span>
+
+      <!-- Right composite: boardroom photo (top wedge) + network map (bottom wedge).
+           Add photo at assets/img/boardroom.jpg then remove the "no-photo" class. -->
+      <div class="hero-right no-photo">
+        <div class="hero-photo"><img src="/assets/img/boardroom.jpg" alt="Executives in a high-rise boardroom" /></div>
+        <div class="hero-map">
+          <div class="map-canvas">
+            <div class="grid"></div>
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <polyline class="link" points="16,44 40,55 62,40 92,40"/>
+              <polyline class="link" points="40,55 24,74 62,40"/>
+              <polyline class="link" points="62,40 78,24 92,40"/>
+              <polyline class="link" points="24,74 62,40 92,40"/>
+            </svg>
+          </div>
+          <span class="node" style="left:16%;top:44%"></span>
+          <span class="node" style="left:40%;top:55%"></span>
+          <span class="node" style="left:62%;top:40%"></span>
+          <span class="node" style="left:92%;top:40%"></span>
+          <span class="node" style="left:78%;top:24%"></span>
+          <span class="node" style="left:24%;top:74%"></span>
+
+          <div class="annot annot--a reveal">
+            <span class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
+            <span class="tx"><span class="h">Cyber Exposure</span><span class="p">Vulnerabilities, data &amp; systems risk</span></span>
+          </div>
+          <div class="annot annot--b reveal" data-delay="80">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v10l-8 4-8-4V7z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg></span>
+            <span class="tx"><span class="h">Supply Chain Risk</span><span class="p">Third-party failure &amp; concentration</span></span>
+          </div>
+          <div class="annot annot--c reveal" data-delay="120">
+            <span class="ic"><svg viewBox="0 0 24 24"><path d="M4 21h16M6 21V9l6-4 6 4v12M10 21v-6h4v6"/></svg></span>
+            <span class="tx"><span class="h">Regulatory Gaps</span><span class="p">Compliance failure &amp; enforcement</span></span>
+          </div>
+          <div class="annot annot--d reveal" data-delay="160">
+            <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6"/></svg></span>
+            <span class="tx"><span class="h">Insider Threat</span><span class="p">Behavioural risk &amp; access abuse</span></span>
+          </div>
+          <div class="annot annot--e reveal" data-delay="200">
+            <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M18 6l-2 2M8 16l-2 2"/></svg></span>
+            <span class="tx"><span class="h">Operational Weakness</span><span class="p">Process, resilience &amp; control failure</span></span>
+          </div>
+        </div>
+        <svg class="hero-seam" viewBox="0 0 100 100" preserveAspectRatio="none"><line x1="0" y1="72" x2="100" y2="34"/></svg>
+      </div>
     </div>
   </section>
 
-  <!-- ===== Positioning statement ===== -->
-  <section class="section section--band">
+  <!-- ===== Value band ===== -->
+  <section class="value-band">
+    <div class="wrap value-grid" data-stagger>
+      <div class="value reveal">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 L20 5 V11 C20 16.5 16.5 20 12 22 C7.5 20 4 16.5 4 11 V5 Z"/><path d="M9 12l2 2 4-4"/></svg></span>
+        <div><div class="h">Expert-Led</div><div class="p">Senior specialists with real-world experience</div></div>
+      </div>
+      <div class="value reveal">
+        <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span>
+        <div><div class="h">Discreet by Design</div><div class="p">Confidential, NDA-protected engagements</div></div>
+      </div>
+      <div class="value reveal">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M9 3h6v3a4 4 0 0 1-4 4 4 4 0 0 1 4 4v4H9v-4a4 4 0 0 1 4-4 4 4 0 0 1-4-4Z"/><path d="M7 3h10M7 21h10"/></svg></span>
+        <div><div class="h">AI-Augmented Intelligence</div><div class="p">Advanced analytics. Human judgement. Stronger outcomes.</div></div>
+      </div>
+      <div class="value reveal">
+        <span class="ic"><svg viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span>
+        <div><div class="h">Executive-Ready Reports</div><div class="p">Clear insight. Prioritised actions. Measurable impact.</div></div>
+      </div>
+      <div class="value reveal">
+        <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="5"/><path d="M8.5 13.5L7 22l5-3 5 3-1.5-8.5"/></svg></span>
+        <div><div class="h">Trusted Advisors</div><div class="p">Long-term partners in your risk journey</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Industries trust bar ===== -->
+  <section class="industries" id="industries">
     <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Our Standard</span>
+      <span class="eyebrow eyebrow--center reveal">Trusted by organisations where the stakes are high</span>
+      <div class="ind-grid reveal" data-delay="90">
+        <div class="ind"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2 L20 5 V11 C20 16.5 16.5 20 12 22 C7.5 20 4 16.5 4 11 V5 Z"/><path d="M12 7l1.6 3.3 3.4.3-2.6 2.3.8 3.4L12 15l-3 1.6.8-3.4L7.2 10.6l3.4-.3z"/></svg></span><span class="l">Defence</span></div>
+        <div class="ind"><span class="ic"><svg viewBox="0 0 24 24"><path d="M12 2c2.5 2.5 4 6 4 10l3 3v2l-4-1.5-1 4 1.5 1.5V23l-3.5-1.5L9 23v-1.5L10.5 20l-1-4L5.5 17.5v-2l3-3c0-4 1.5-7.5 4-10Z"/></svg></span><span class="l">Aerospace</span></div>
+        <div class="ind"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 21h16M6 21V9l6-4 6 4v12M10 21v-6h4v6"/></svg></span><span class="l">Financial Services</span></div>
+        <div class="ind"><span class="ic"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 16 0M12 12V4M4 12v5a3 3 0 0 0 6 0v-5"/></svg></span><span class="l">Insurance</span></div>
+        <div class="ind"><span class="ic"><svg viewBox="0 0 24 24"><path d="M3 21V9l6-3v3l6-3v3l6-3v15zM8 14h2M14 14h2M8 18h2M14 18h2"/></svg></span><span class="l">Manufacturing</span></div>
+        <div class="ind"><span class="ic"><svg viewBox="0 0 24 24"><path d="M2 7h11v9H2zM13 10h5l3 3v3h-8z"/><circle cx="6" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg></span><span class="l">Logistics &amp; Transport</span></div>
+        <div class="ind"><span class="ic"><svg viewBox="0 0 24 24"><path d="M8 3v6l-4 12h16L16 9V3M8 3h8M9 21l3-7 3 7"/></svg></span><span class="l">Critical Infrastructure</span></div>
+        <div class="ind"><span class="ic"><svg viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></svg></span><span class="l">Technology</span></div>
       </div>
-      <p class="statement reveal" data-delay="90">Our approach is defined by discretion, proportionality and rigorous professional standards — engagements built to withstand <em>legal and regulatory scrutiny</em>.</p>
     </div>
   </section>
 
-  <!-- ===== Core services ===== -->
+  <!-- ===== Services ===== -->
   <section class="section" id="services">
     <div class="wrap">
       <div class="section-head reveal">
@@ -88,155 +184,42 @@
         <h2 class="display">Deep-dive capability for critical business risks.</h2>
         <p class="lead">Authoritative assurance for sensitive situations, disputes and regulatory challenges — delivered as clear, factual findings.</p>
       </div>
-
       <div class="svc-grid" data-stagger>
-        <div class="svc-row reveal">
-          <span class="num">01</span>
-          <h3>Corporate Investigations</h3>
-          <p class="svc-desc">Discreet investigations into fraud, misconduct or operational anomalies requiring evidence.</p>
-          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          <a class="svc-cover" href="/services.html#corporate-investigations" aria-label="Corporate Investigations"></a>
-        </div>
-        <div class="svc-row reveal">
-          <span class="num">02</span>
-          <h3>Business Risk &amp; Resilience Review</h3>
-          <p class="svc-desc">Comprehensive assessment of operational vulnerabilities and resilience planning for board-level assurance.</p>
-          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          <a class="svc-cover" href="/services.html#risk-review" aria-label="Business Risk and Resilience Review"></a>
-        </div>
-        <div class="svc-row reveal">
-          <span class="num">03</span>
-          <h3>Sensitive Data Exfiltration &amp; Discovery</h3>
-          <p class="svc-desc">Identification of unauthorised data transfers and recovery of sensitive intellectual property.</p>
-          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          <a class="svc-cover" href="/services.html#data-exfiltration" aria-label="Sensitive Data Exfiltration and Discovery"></a>
-        </div>
-        <div class="svc-row reveal">
-          <span class="num">04</span>
-          <h3>Device Forensics</h3>
-          <p class="svc-desc">Forensically sound acquisition and analysis of data from mobile devices and computers.</p>
-          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          <a class="svc-cover" href="/services.html#device-forensics" aria-label="Device Forensics"></a>
-        </div>
-        <div class="svc-row reveal">
-          <span class="num">05</span>
-          <h3>Incident Response</h3>
-          <p class="svc-desc">Rapid deployment to manage, contain and investigate critical security or data incidents.</p>
-          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          <a class="svc-cover" href="/services.html#incident-response" aria-label="Incident Response"></a>
-        </div>
-        <div class="svc-row reveal">
-          <span class="num">06</span>
-          <h3>Compliance Assistance — GDPR / ICO</h3>
-          <p class="svc-desc">Guidance on data protection obligations and navigating regulatory reporting requirements.</p>
-          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          <a class="svc-cover" href="/services.html#compliance" aria-label="Compliance Assistance"></a>
-        </div>
-        <div class="svc-row reveal">
-          <span class="num">07</span>
-          <h3>Employee Dispute Resolution — Technical</h3>
-          <p class="svc-desc">Technical fact-finding to support HR and legal teams in complex employee disputes.</p>
-          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          <a class="svc-cover" href="/services.html#employee-disputes" aria-label="Employee Dispute Resolution"></a>
-        </div>
-        <div class="svc-row reveal">
-          <span class="num">08</span>
-          <h3>OSINT &amp; Social Media Analysis</h3>
-          <p class="svc-desc">Open-source intelligence gathering to identify risks or corroborate findings.</p>
-          <span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
-          <a class="svc-cover" href="/services.html#osint" aria-label="OSINT and Social Media Analysis"></a>
-        </div>
+        <div class="svc-row reveal"><span class="num">01</span><h3>Corporate Investigations</h3><p>Discreet investigations into fraud, misconduct or operational anomalies requiring evidence.</p><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><a class="cover" href="/services.html#corporate-investigations" aria-label="Corporate Investigations"></a></div>
+        <div class="svc-row reveal"><span class="num">02</span><h3>Business Risk &amp; Resilience Review</h3><p>Assessment of operational vulnerabilities and resilience planning for board-level assurance.</p><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><a class="cover" href="/services.html#risk-review" aria-label="Business Risk and Resilience Review"></a></div>
+        <div class="svc-row reveal"><span class="num">03</span><h3>Sensitive Data Exfiltration &amp; Discovery</h3><p>Identification of unauthorised data transfers and recovery of sensitive intellectual property.</p><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><a class="cover" href="/services.html#data-exfiltration" aria-label="Sensitive Data Exfiltration and Discovery"></a></div>
+        <div class="svc-row reveal"><span class="num">04</span><h3>Device Forensics</h3><p>Forensically sound acquisition and analysis of data from mobile devices and computers.</p><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><a class="cover" href="/services.html#device-forensics" aria-label="Device Forensics"></a></div>
+        <div class="svc-row reveal"><span class="num">05</span><h3>Incident Response</h3><p>Rapid deployment to manage, contain and investigate critical security or data incidents.</p><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><a class="cover" href="/services.html#incident-response" aria-label="Incident Response"></a></div>
+        <div class="svc-row reveal"><span class="num">06</span><h3>Compliance Assistance — GDPR / ICO</h3><p>Guidance on data protection obligations and navigating regulatory reporting requirements.</p><span class="arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><a class="cover" href="/services.html#compliance" aria-label="Compliance Assistance"></a></div>
       </div>
     </div>
   </section>
 
   <!-- ===== How we work ===== -->
-  <section class="section section--band" id="process">
+  <section class="section section--paper2" id="platform">
     <div class="wrap">
       <div class="section-head reveal">
         <span class="eyebrow">How We Work</span>
         <h2 class="display">A disciplined, defensible engagement.</h2>
       </div>
       <div class="process" data-stagger>
-        <div class="step reveal">
-          <span class="num">01</span>
-          <h3>Assessment &amp; Scoping</h3>
-          <p>Initial discussion under NDA to understand the scope and sensitivity of the matter.</p>
-        </div>
-        <div class="step reveal">
-          <span class="num">02</span>
-          <h3>Investigation &amp; Response</h3>
-          <p>Executing the agreed plan with strict chain-of-custody and evidence handling protocols.</p>
-        </div>
-        <div class="step reveal">
-          <span class="num">03</span>
-          <h3>Reporting &amp; Findings</h3>
-          <p>Delivering clear, factual reports suitable for board review or legal proceedings.</p>
-        </div>
+        <div class="step reveal"><span class="num">01</span><h3>Assessment &amp; Scoping</h3><p>Initial discussion under NDA to understand the scope and sensitivity of the matter.</p></div>
+        <div class="step reveal"><span class="num">02</span><h3>Investigation &amp; Response</h3><p>Executing the agreed plan with strict chain-of-custody and evidence handling protocols.</p></div>
+        <div class="step reveal"><span class="num">03</span><h3>Reporting &amp; Findings</h3><p>Delivering clear, factual reports suitable for board review or legal proceedings.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- ===== Commitments ===== -->
-  <section class="section">
-    <div class="wrap">
-      <div class="section-head reveal">
-        <span class="eyebrow">Our Commitments</span>
-        <h2 class="display">Held to the standards our clients answer to.</h2>
-      </div>
-      <div class="commit-grid" data-stagger>
-        <div class="commit reveal">
-          <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 2 L20 5 V11 C20 16.5 16.5 20 12 22 C7.5 20 4 16.5 4 11 V5 Z"/></svg></span>
-          <h3>Absolute discretion</h3>
-          <p>All operations are conducted with the highest level of discretion and confidentiality.</p>
-        </div>
-        <div class="commit reveal">
-          <span class="ico"><svg viewBox="0 0 24 24"><path d="M12 3 v18 M5 8 h14 M6 8 l-2.5 6 a3.5 3.5 0 0 0 7 0 Z M18 8 l-2.5 6 a3.5 3.5 0 0 0 7 0 Z"/></svg></span>
-          <h3>Proportionality</h3>
-          <p>We ensure all actions are necessary, justified and proportionate to the risk.</p>
-        </div>
-        <div class="commit reveal">
-          <span class="ico"><svg viewBox="0 0 24 24"><path d="M5 21 V7 l7-4 7 4 v14 M9 21 v-6 h6 v6 M9 11 h.01 M15 11 h.01"/></svg></span>
-          <h3>Rigorous standards</h3>
-          <p>Methodologies designed to withstand legal and regulatory scrutiny.</p>
-        </div>
-        <div class="commit reveal">
-          <span class="ico"><svg viewBox="0 0 24 24"><path d="M4 4 h16 v13 H4 Z M8 9 h8 M8 12 h8 M8 15 h5 M9 20 h6"/></svg></span>
-          <h3>Defensible findings</h3>
-          <p>Clear, factual reporting engineered for board review and legal proceedings.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== Sectors ===== -->
-  <section class="section section--band">
-    <div class="wrap sectors">
-      <div class="section-head reveal" style="margin-bottom:0;">
-        <span class="eyebrow">Who We Serve</span>
-        <h2 class="display">Trusted where the stakes are highest.</h2>
-        <p class="lead">We work alongside those who carry the greatest accountability — under confidentiality, at board level, and where findings must hold up to challenge.</p>
-      </div>
-      <ul class="sector-list reveal" data-delay="120">
-        <li><span class="k">01</span><span class="t">Boards &amp; Executives</span><span class="d">Board-level assurance and sensitive internal matters.</span></li>
-        <li><span class="k">02</span><span class="t">Legal Counsel</span><span class="d">Evidence gathering and reporting for proceedings.</span></li>
-        <li><span class="k">03</span><span class="t">Financial Services</span><span class="d">Fraud, misconduct and regulatory exposure.</span></li>
-        <li><span class="k">04</span><span class="t">HR &amp; Employment</span><span class="d">Technical fact-finding for complex disputes.</span></li>
-        <li><span class="k">05</span><span class="t">Regulated Organisations</span><span class="d">GDPR / ICO obligations and incident response.</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ===== CTA band ===== -->
-  <section class="cta-band">
+  <!-- ===== CTA ===== -->
+  <section class="cta-band" id="insights">
     <div class="wrap reveal">
-      <span class="eyebrow eyebrow--plain">Confidential Engagement</span>
+      <span class="eyebrow eyebrow--plain eyebrow--light">Confidential Engagement</span>
       <h2 class="display">Discuss a sensitive matter, in strict confidence.</h2>
-      <p class="lead" style="color:var(--muted);">Every enquiry begins with a confidential discussion under NDA. Tell us only what you need to — we will guide the rest.</p>
+      <p>Every enquiry begins with a confidential discussion under NDA. Tell us only what you need to — we will guide the rest.</p>
       <div class="btn-row">
-        <a class="btn btn--brass" href="/contact.html">Request Confidential Consultation
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn--ghost" href="mailto:ir@guardianrisk.co.uk">Urgent — Incident Response</a>
+        <a class="btn btn--brass" href="/contact.html">Request a Confidential Briefing
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></a>
+        <a class="btn btn--outline" href="mailto:ir@guardianrisk.co.uk">Urgent — Incident Response</a>
       </div>
     </div>
   </section>
@@ -247,10 +230,14 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a class="brand" href="/index.html">
-            <svg class="mark" viewBox="0 0 22 26" aria-hidden="true"><path d="M11 1 L21 4.5 V13 C21 19 16.5 23.4 11 25.5 C5.5 23.4 1 19 1 13 V4.5 Z"/></svg>
-            <span><b>GUARDIAN</b> RISK</span>
+            <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 3 L42 10 V25 C42 35 34 42.5 24 46 C14 42.5 6 35 6 25 V10 Z" fill="none" stroke="#C6A15B" stroke-width="1.4"/>
+              <path d="M15 33 V17 L24 27 L33 17 V33" fill="none" stroke="#C6A15B" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+              <circle cx="24" cy="15.5" r="1.6" fill="#C6A15B"/>
+            </svg>
+            <span class="logo-text"><span class="name">GUARDIAN&nbsp;RISK</span><span class="tag">Intelligence · Assurance · Protection</span></span>
           </a>
-          <p>Business risk &amp; investigations. Discreet, proportionate and rigorous — assurance for sensitive situations.</p>
+          <p>Business risk &amp; investigations. We expose hidden risk before it becomes business exposure.</p>
         </div>
         <div class="footer-col">
           <h4>Services</h4>
@@ -274,9 +261,9 @@
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
-            <li><span class="contact-tag">All Sales Enquiries</span><a class="contact-email" href="mailto:sales@guardianrisk.co.uk">sales@guardianrisk.co.uk</a></li>
-            <li><span class="contact-tag">Incident Response — Urgent</span><a class="contact-email" href="mailto:ir@guardianrisk.co.uk">ir@guardianrisk.co.uk</a></li>
-            <li><span class="contact-tag">General</span><a class="contact-email" href="mailto:g4r@guardianrisk.co.uk">g4r@guardianrisk.co.uk</a></li>
+            <li><span class="tagl">All Sales Enquiries</span><a class="em" href="mailto:sales@guardianrisk.co.uk">sales@guardianrisk.co.uk</a></li>
+            <li><span class="tagl">Incident Response — Urgent</span><a class="em" href="mailto:ir@guardianrisk.co.uk">ir@guardianrisk.co.uk</a></li>
+            <li><span class="tagl">General</span><a class="em" href="mailto:g4r@guardianrisk.co.uk">g4r@guardianrisk.co.uk</a></li>
           </ul>
         </div>
       </div>
