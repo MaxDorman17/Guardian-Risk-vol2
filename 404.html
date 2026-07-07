@@ -7,31 +7,37 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/guardian.css" />
 </head>
 <body>
   <header class="site-header scrolled">
     <div class="wrap header-inner">
       <a class="brand" href="/index.html" aria-label="Guardian Risk — home">
-        <svg class="mark" viewBox="0 0 22 26" aria-hidden="true"><path d="M11 1 L21 4.5 V13 C21 19 16.5 23.4 11 25.5 C5.5 23.4 1 19 1 13 V4.5 Z"/></svg>
-        <span><b>GUARDIAN</b> RISK</span>
+        <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M24 3 L42 10 V25 C42 35 34 42.5 24 46 C14 42.5 6 35 6 25 V10 Z" fill="none" stroke="#C6A15B" stroke-width="1.4"/>
+          <path d="M15 33 V17 L24 27 L33 17 V33" fill="none" stroke="#C6A15B" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+          <circle cx="24" cy="15.5" r="1.6" fill="#C6A15B"/>
+        </svg>
+        <span class="logo-text"><span class="name">GUARDIAN&nbsp;RISK</span><span class="tag">Intelligence · Assurance · Protection</span></span>
       </a>
       <div class="header-cta">
-        <a class="btn btn--brass" href="/contact.html">Request Consultation</a>
+        <a class="btn btn--dark" href="/contact.html">
+          <svg class="lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          Request a Confidential Briefing</a>
       </div>
     </div>
   </header>
 
-  <section class="page-hero" style="min-height:80vh;display:flex;align-items:center;">
+  <section class="page-hero" style="min-height:82vh;display:flex;align-items:center;">
     <div class="wrap">
       <span class="eyebrow">Error 404</span>
       <h1 class="display" style="margin:24px 0;">This page could not be found.</h1>
       <p class="lead" style="margin-bottom:36px;">The page you are looking for may have moved or no longer exists.</p>
-      <div class="hero__cta">
+      <div class="hero-cta">
         <a class="btn btn--brass" href="/index.html">Return Home
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn--ghost" href="/services.html">View Our Services</a>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--outline" href="/services.html">View Our Services</a>
       </div>
     </div>
   </section>

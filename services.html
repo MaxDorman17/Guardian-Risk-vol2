@@ -8,26 +8,43 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/guardian.css" />
 </head>
 <body>
 
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="/index.html" aria-label="Guardian Risk — home">
-        <svg class="mark" viewBox="0 0 22 26" aria-hidden="true"><path d="M11 1 L21 4.5 V13 C21 19 16.5 23.4 11 25.5 C5.5 23.4 1 19 1 13 V4.5 Z"/></svg>
-        <span><b>GUARDIAN</b> RISK</span>
+        <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <path d="M24 3 L42 10 V25 C42 35 34 42.5 24 46 C14 42.5 6 35 6 25 V10 Z" fill="none" stroke="#C6A15B" stroke-width="1.4"/>
+          <path d="M15 33 V17 L24 27 L33 17 V33" fill="none" stroke="#C6A15B" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+          <circle cx="24" cy="15.5" r="1.6" fill="#C6A15B"/>
+        </svg>
+        <span class="logo-text"><span class="name">GUARDIAN&nbsp;RISK</span><span class="tag">Intelligence · Assurance · Protection</span></span>
       </a>
       <nav class="nav" aria-label="Primary">
-        <a href="/services.html" class="active">Services</a>
-        <a href="/about.html">About</a>
-        <a href="/about.html#process">How We Work</a>
+        <div class="has-drop">
+          <button type="button" aria-haspopup="true">Services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+          <div class="dropdown" role="menu">
+            <a href="/services.html#corporate-investigations"><span class="t">Corporate Investigations</span><span class="d">Fraud, misconduct &amp; anomalies</span></a>
+            <a href="/services.html#risk-review"><span class="t">Business Risk &amp; Resilience</span><span class="d">Board-level assurance</span></a>
+            <a href="/services.html#device-forensics"><span class="t">Device Forensics</span><span class="d">Sound digital evidence</span></a>
+            <a href="/services.html#incident-response"><span class="t">Incident Response</span><span class="d">Contain &amp; investigate</span></a>
+            <a href="/services.html"><span class="t">All Services</span><span class="d">View the full capability</span></a>
+          </div>
+        </div>
+        <a href="/index.html#platform">G4R Platform</a>
+        <a href="/index.html#industries">Industries</a>
+        <a href="/index.html#insights">Insights</a>
+        <a href="/about.html">About Us</a>
         <a href="/contact.html">Contact</a>
       </nav>
       <div class="header-cta">
-        <a class="login" href="/contact.html">Client Login</a>
-        <a class="btn btn--brass" href="/contact.html">Request Consultation</a>
+        <a class="btn btn--dark" href="/contact.html">
+          <svg class="lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+          Request a Confidential Briefing</a>
       </div>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
     </div>
@@ -35,11 +52,13 @@
 
   <nav class="mobile-nav" aria-label="Mobile">
     <a href="/services.html">Services</a>
-    <a href="/about.html">About</a>
-    <a href="/about.html#process">How We Work</a>
+    <a href="/index.html#platform">G4R Platform</a>
+    <a href="/index.html#industries">Industries</a>
+    <a href="/index.html#insights">Insights</a>
+    <a href="/about.html">About Us</a>
     <a href="/contact.html">Contact</a>
-    <a class="btn btn--brass" href="/contact.html">Request Consultation</a>
-    <div class="m-contact">Urgent matters — <a href="mailto:ir@guardianrisk.co.uk">ir@guardianrisk.co.uk</a></div>
+    <a class="btn btn--brass" href="/contact.html">Request a Confidential Briefing</a>
+    <div class="m-contact">Urgent — <a href="mailto:ir@guardianrisk.co.uk">ir@guardianrisk.co.uk</a></div>
   </nav>
 
   <!-- Page hero -->
@@ -62,9 +81,7 @@
           <h2 class="display">Corporate Investigations</h2>
           <p>Discreet corporate investigations into fraud, misconduct or operational anomalies requiring evidence. We establish the facts objectively, preserving evidential integrity throughout, so that findings can support internal decisions, disciplinary action or legal proceedings.</p>
           <p>Every investigation is scoped to be necessary, justified and proportionate to the risk — nothing more.</p>
-          <div class="incl">
-            <span>Fraud &amp; misconduct</span><span>Evidence preservation</span><span>Interview support</span><span>Legally sound reporting</span>
-          </div>
+          <div class="incl"><span>Fraud &amp; misconduct</span><span>Evidence preservation</span><span>Interview support</span><span>Legally sound reporting</span></div>
         </div>
       </article>
 
@@ -73,9 +90,7 @@
         <div class="body">
           <h2 class="display">Business Risk &amp; Resilience Review</h2>
           <p>Comprehensive assessment of operational vulnerabilities and resilience planning for board-level assurance. We map exposure across people, process and technology, then translate it into a clear, prioritised picture the board can act on.</p>
-          <div class="incl">
-            <span>Vulnerability assessment</span><span>Resilience planning</span><span>Board-level reporting</span><span>Risk prioritisation</span>
-          </div>
+          <div class="incl"><span>Vulnerability assessment</span><span>Resilience planning</span><span>Board-level reporting</span><span>Risk prioritisation</span></div>
         </div>
       </article>
 
@@ -84,9 +99,7 @@
         <div class="body">
           <h2 class="display">Sensitive Data Exfiltration &amp; Discovery</h2>
           <p>Identification of unauthorised data transfers and recovery of sensitive intellectual property. Where confidential information has left the organisation — or is suspected to have — we determine what moved, how, and to whom, with defensible evidence.</p>
-          <div class="incl">
-            <span>Data loss investigation</span><span>IP recovery</span><span>Exfiltration analysis</span><span>Chain of custody</span>
-          </div>
+          <div class="incl"><span>Data loss investigation</span><span>IP recovery</span><span>Exfiltration analysis</span><span>Chain of custody</span></div>
         </div>
       </article>
 
@@ -95,9 +108,7 @@
         <div class="body">
           <h2 class="display">Device Forensics</h2>
           <p>Forensically sound acquisition and analysis of data from mobile devices and computers. Using validated methods, we recover, preserve and interpret digital evidence in a manner designed to withstand legal and regulatory scrutiny.</p>
-          <div class="incl">
-            <span>Mobile &amp; computer</span><span>Sound acquisition</span><span>Deleted data recovery</span><span>Expert analysis</span>
-          </div>
+          <div class="incl"><span>Mobile &amp; computer</span><span>Sound acquisition</span><span>Deleted data recovery</span><span>Expert analysis</span></div>
         </div>
       </article>
 
@@ -106,9 +117,7 @@
         <div class="body">
           <h2 class="display">Incident Response</h2>
           <p>Rapid deployment to manage, contain and investigate critical security or data incidents. When time matters, we move quickly to limit impact, preserve evidence, and establish exactly what happened — coordinating with your legal and compliance teams throughout.</p>
-          <div class="incl">
-            <span>Rapid deployment</span><span>Containment</span><span>Breach investigation</span><span>Regulatory coordination</span>
-          </div>
+          <div class="incl"><span>Rapid deployment</span><span>Containment</span><span>Breach investigation</span><span>Regulatory coordination</span></div>
         </div>
       </article>
 
@@ -117,9 +126,7 @@
         <div class="body">
           <h2 class="display">Compliance Assistance — GDPR / ICO</h2>
           <p>Guidance on data protection obligations and navigating regulatory reporting requirements. We help you understand what a matter requires under GDPR and how to engage with the ICO — clearly and without alarm.</p>
-          <div class="incl">
-            <span>Data protection</span><span>ICO reporting</span><span>Breach notification</span><span>Practical guidance</span>
-          </div>
+          <div class="incl"><span>Data protection</span><span>ICO reporting</span><span>Breach notification</span><span>Practical guidance</span></div>
         </div>
       </article>
 
@@ -128,9 +135,7 @@
         <div class="body">
           <h2 class="display">Employee Dispute Resolution — Technical</h2>
           <p>Technical fact-finding to support HR and legal teams in complex employee disputes. We provide impartial, evidence-based analysis that helps sensitive matters be resolved fairly and defensibly.</p>
-          <div class="incl">
-            <span>Technical fact-finding</span><span>HR support</span><span>Impartial analysis</span><span>Defensible evidence</span>
-          </div>
+          <div class="incl"><span>Technical fact-finding</span><span>HR support</span><span>Impartial analysis</span><span>Defensible evidence</span></div>
         </div>
       </article>
 
@@ -139,9 +144,7 @@
         <div class="body">
           <h2 class="display">OSINT &amp; Social Media Analysis</h2>
           <p>Open-source intelligence gathering to identify risks or corroborate findings. We draw on publicly available information — lawfully and proportionately — to build context, verify claims and surface exposure.</p>
-          <div class="incl">
-            <span>Open-source intelligence</span><span>Risk identification</span><span>Corroboration</span><span>Due diligence</span>
-          </div>
+          <div class="incl"><span>Open-source intelligence</span><span>Risk identification</span><span>Corroboration</span><span>Due diligence</span></div>
         </div>
       </article>
 
@@ -151,13 +154,13 @@
   <!-- CTA -->
   <section class="cta-band">
     <div class="wrap reveal">
-      <span class="eyebrow eyebrow--plain">Confidential Engagement</span>
+      <span class="eyebrow eyebrow--plain eyebrow--light">Confidential Engagement</span>
       <h2 class="display">Not sure which service fits your situation?</h2>
-      <p class="lead" style="color:var(--muted);">Begin with a confidential discussion under NDA. We will help you scope the matter and recommend the right approach.</p>
+      <p>Begin with a confidential discussion under NDA. We will help you scope the matter and recommend the right approach.</p>
       <div class="btn-row">
-        <a class="btn btn--brass" href="/contact.html">Request Confidential Consultation
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn--ghost" href="mailto:ir@guardianrisk.co.uk">Urgent — Incident Response</a>
+        <a class="btn btn--brass" href="/contact.html">Request a Confidential Briefing
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></a>
+        <a class="btn btn--outline" href="mailto:ir@guardianrisk.co.uk">Urgent — Incident Response</a>
       </div>
     </div>
   </section>
@@ -167,10 +170,14 @@
       <div class="footer-top">
         <div class="footer-brand">
           <a class="brand" href="/index.html">
-            <svg class="mark" viewBox="0 0 22 26" aria-hidden="true"><path d="M11 1 L21 4.5 V13 C21 19 16.5 23.4 11 25.5 C5.5 23.4 1 19 1 13 V4.5 Z"/></svg>
-            <span><b>GUARDIAN</b> RISK</span>
+            <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true">
+              <path d="M24 3 L42 10 V25 C42 35 34 42.5 24 46 C14 42.5 6 35 6 25 V10 Z" fill="none" stroke="#C6A15B" stroke-width="1.4"/>
+              <path d="M15 33 V17 L24 27 L33 17 V33" fill="none" stroke="#C6A15B" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+              <circle cx="24" cy="15.5" r="1.6" fill="#C6A15B"/>
+            </svg>
+            <span class="logo-text"><span class="name">GUARDIAN&nbsp;RISK</span><span class="tag">Intelligence · Assurance · Protection</span></span>
           </a>
-          <p>Business risk &amp; investigations. Discreet, proportionate and rigorous — assurance for sensitive situations.</p>
+          <p>Business risk &amp; investigations. We expose hidden risk before it becomes business exposure.</p>
         </div>
         <div class="footer-col">
           <h4>Services</h4>
@@ -194,9 +201,9 @@
         <div class="footer-col">
           <h4>Contact</h4>
           <ul>
-            <li><span class="contact-tag">All Sales Enquiries</span><a class="contact-email" href="mailto:sales@guardianrisk.co.uk">sales@guardianrisk.co.uk</a></li>
-            <li><span class="contact-tag">Incident Response — Urgent</span><a class="contact-email" href="mailto:ir@guardianrisk.co.uk">ir@guardianrisk.co.uk</a></li>
-            <li><span class="contact-tag">General</span><a class="contact-email" href="mailto:g4r@guardianrisk.co.uk">g4r@guardianrisk.co.uk</a></li>
+            <li><span class="tagl">All Sales Enquiries</span><a class="em" href="mailto:sales@guardianrisk.co.uk">sales@guardianrisk.co.uk</a></li>
+            <li><span class="tagl">Incident Response — Urgent</span><a class="em" href="mailto:ir@guardianrisk.co.uk">ir@guardianrisk.co.uk</a></li>
+            <li><span class="tagl">General</span><a class="em" href="mailto:g4r@guardianrisk.co.uk">g4r@guardianrisk.co.uk</a></li>
           </ul>
         </div>
       </div>
