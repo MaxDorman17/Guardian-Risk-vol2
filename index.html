@@ -72,8 +72,10 @@
 
   <!-- ===== Hero ===== -->
   <section class="hero">
-    <div class="hero-grid">
-      <div class="hero-left">
+    <img class="hero-bg" src="/assets/img/hero.jpg" alt="Executives in a high-rise boardroom above a dark aerial city map marked with red risk nodes" />
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
         <span class="eyebrow reveal">Business Risk &amp; Investigations</span>
         <span class="rule reveal" data-delay="60"></span>
         <h1 class="display reveal" data-delay="90">Uncover the risk beneath the <span class="brass">surface.</span></h1>
@@ -85,51 +87,14 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         </div>
       </div>
-
-      <!-- Right composite: boardroom photo (top wedge) + network map (bottom wedge).
-           Add photo at assets/img/boardroom.jpg then remove the "no-photo" class. -->
-      <div class="hero-right no-photo">
-        <div class="hero-photo"><img src="/assets/img/boardroom.jpg" alt="Executives in a high-rise boardroom" /></div>
-        <div class="hero-map">
-          <div class="map-canvas">
-            <div class="grid"></div>
-            <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-              <polyline class="link" points="16,44 40,55 62,40 92,40"/>
-              <polyline class="link" points="40,55 24,74 62,40"/>
-              <polyline class="link" points="62,40 78,24 92,40"/>
-              <polyline class="link" points="24,74 62,40 92,40"/>
-            </svg>
-          </div>
-          <span class="node" style="left:16%;top:44%"></span>
-          <span class="node" style="left:40%;top:55%"></span>
-          <span class="node" style="left:62%;top:40%"></span>
-          <span class="node" style="left:92%;top:40%"></span>
-          <span class="node" style="left:78%;top:24%"></span>
-          <span class="node" style="left:24%;top:74%"></span>
-
-          <div class="annot annot--a reveal">
-            <span class="ic"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="9"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span>
-            <span class="tx"><span class="h">Cyber Exposure</span><span class="p">Vulnerabilities, data &amp; systems risk</span></span>
-          </div>
-          <div class="annot annot--b reveal" data-delay="80">
-            <span class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v10l-8 4-8-4V7z"/><path d="M4 7l8 4 8-4M12 11v10"/></svg></span>
-            <span class="tx"><span class="h">Supply Chain Risk</span><span class="p">Third-party failure &amp; concentration</span></span>
-          </div>
-          <div class="annot annot--c reveal" data-delay="120">
-            <span class="ic"><svg viewBox="0 0 24 24"><path d="M4 21h16M6 21V9l6-4 6 4v12M10 21v-6h4v6"/></svg></span>
-            <span class="tx"><span class="h">Regulatory Gaps</span><span class="p">Compliance failure &amp; enforcement</span></span>
-          </div>
-          <div class="annot annot--d reveal" data-delay="160">
-            <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.6 3.1-6 7-6s7 2.4 7 6"/></svg></span>
-            <span class="tx"><span class="h">Insider Threat</span><span class="p">Behavioural risk &amp; access abuse</span></span>
-          </div>
-          <div class="annot annot--e reveal" data-delay="200">
-            <span class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M18 6l-2 2M8 16l-2 2"/></svg></span>
-            <span class="tx"><span class="h">Operational Weakness</span><span class="p">Process, resilience &amp; control failure</span></span>
-          </div>
-        </div>
-        <svg class="hero-seam" viewBox="0 0 100 100" preserveAspectRatio="none"><line x1="0" y1="72" x2="100" y2="34"/></svg>
-      </div>
+    </div>
+    <!-- Risk taxonomy strip -->
+    <div class="hero-risks" aria-hidden="false">
+      <span class="hr">Cyber Exposure</span>
+      <span class="hr">Supply Chain Risk</span>
+      <span class="hr">Regulatory Gaps</span>
+      <span class="hr">Insider Threat</span>
+      <span class="hr">Operational Weakness</span>
     </div>
   </section>
 
